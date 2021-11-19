@@ -1,0 +1,22 @@
+.salesTable {
+  padding: 0;
+  margin: auto;
+  border-collapse: collapse;
+  width: 80%;
+  text-align: center;
+  color: black;
+}
+.salesTableHeaderRow {
+  color: darkorange;
+  font-weight: bold;
+  height: 50px;
+}
+.salesTable-Body:nth-child(odd) {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+.salesTable-Body:hover {
+  background-color: darkorange;
+}
+.salesTable tr td {
+  height: 25px;
+}
