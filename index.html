@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalesOrderSystem</title>
+    <script src="myScript.js"> </script>
+    <style> @import "stylesheet.css";</style>
+</head>
+<body>
+    <input type="button" value="Refresh" onclick="getData()" />
+
+	<input type="button" value="Save" onclick="postData2()" />
+
+    <div class="sales" style="display:block">
+        <table class="salesTable" id="dataTable" width="350px" border="1">
+            <thead class="salesTableHead">
+                <tr class="salesTableHeaderRow">
+                    <th>SF Record Id</th>
+                    <th>Opportunity No</th>
+                    <th>Close Date</th>
+                    <th>Account</th>
+                    <th>Current Stage</th>
+                </tr>
+            </thead>
+            <tbody class="salesTable-Body">
+
+            </tbody>
+            <!--
+                <tr>
+                <td><input type="text" name="oppNo"/></td>
+                <td><input type="date" name="date"> </td>
+                <td> <input type="text" /> </td>
+                <td>
+                    <select name="stages" id="stages"></select>
+                </td>
+            </tr>
+            -->
+            
+        </table>
+    </div>
+	
+</body>
+</html>
