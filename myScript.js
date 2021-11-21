@@ -210,6 +210,4 @@ const appendRecord = (singleRecord) => {
 function appendAll(payload) {
     document.getElementById("stagesSelect").value = payload.CurrentStage;
 }
-
-
-
+    

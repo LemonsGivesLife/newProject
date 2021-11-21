@@ -9,9 +9,20 @@
     <style> @import "stylesheet.css";</style>
 </head>
 <body>
-    <input class="refreshButton" type="button" value="Refresh" onclick="getData()" />
-
-	<input class="saveButton" type="button" value="Save" onclick="postData2()" />
+    <section>
+        <head>
+            <h1 class="mainTitle">Sales Order System</h1>
+        </head>
+        <nav>
+            <ul class="horizontal">
+                <li><a class="active" href="#Sales Orders">Sales Orders</a></li>
+                <li><a href="#Customer Details">Customer Details</a></li>
+            </ul>
+        </nav>
+    </section>
+    <div class="titleSection">
+        
+    </div>
 
     <div class="sales" style="display:block">
         <table class="salesTable" id="dataTable" width="350px" border="1">
@@ -40,6 +51,9 @@
             
         </table>
     </div>
-	
+    <div class="buttonSection">
+        <input class="refreshButton" type="button" value="Refresh" onclick="getData()" />
+	    <input class="saveButton" type="button" value="Save" onclick="postData2()" />
+    </div>
 </body>
 </html>
