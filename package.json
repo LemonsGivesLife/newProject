@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Ability to simulate a custom order system that synchronises with a Salesforce Demo Org",
   "scripts": {
-    "start": "serve",
+    "start": "serve"
   },
   "dependencies": {
     "serve": "^10.0.1"
