@@ -52,13 +52,13 @@ ul.horizontal li a.active {
   padding: 0;
   margin: auto;
   font-size: 0.9em;
-  border-collapse: collapse;
+  border: 3px black;
   width: 80%;
   text-align: center;
   color: black;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  border-collapse: collapse;
 }
+
 .salesTableHeaderRow {
   background-color: #009879;
   font-weight: bold;
@@ -66,15 +66,38 @@ ul.horizontal li a.active {
   text-align: center;
 }
 
-.salesTable-Body:nth-child(odd) {
+/*
+.salesTableBody:nth-child(odd) {
   background-color: rgba(128, 128, 128, 0.05);
 }
-.salesTable-Body:hover {
+
+.salesTableBody:hover {
   background-color: black;
 }
+
+.salesTableBody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.salesTableBody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.salesTableBody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+*/
 .salesTable tr td {
   height: 25px;
+  padding: 10px 12px;
 }
+
+.salesTableBodyRow {
+
+}
+
+
+
 .refreshButton {
   background-color: #4CAF50; /* Green */
   color: white;

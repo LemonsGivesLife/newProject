@@ -159,7 +159,7 @@ const createSalesTable = () => {
 
     //Creates the table body group element
     let salesTableBody = document.createElement('tbody');
-    salesTableBody.className = 'salesTable-Body';
+    salesTableBody.className = 'salesTableBody';
     //Appends the table body group element to the table
     salesTable.append(salesTableBody);
 
@@ -170,6 +170,8 @@ const createSalesTable = () => {
 const appendRecord = (singleRecord) => {
     //Find the table that was created
     const salesTable = document.querySelector('.salesTable');
+    const salesTableBody = document.querySelector('.salesTableBody')
+    let salesDiv = document.createElement('div');
 
     //Create current table row
     let salesTableBodyRow = document.createElement('tr');
@@ -201,13 +203,15 @@ const appendRecord = (singleRecord) => {
     let storeSelectStage = addOptions(selectStage);
     currentStage.append(storeSelectStage);
 
+    salesTable.append(salesTableBody);
+    salesTableBody.append(salesTableBodyRow);
     salesTableBodyRow.append(sfRecordId, opptyNo, closeDate, accountName, currentStage);
     //salesTableBodyRow.append(opptyNo, closeDate, accountName, currentStage);
-    salesTable.append(salesTableBodyRow);
+    //salesTableBody.append(salesDiv);
+    //salesTable.append(salesTableBodyRow);
     appendAll(singleRecord);
 }
 
 function appendAll(payload) {
     document.getElementById("stagesSelect").value = payload.CurrentStage;
 }
-    
