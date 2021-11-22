@@ -121,8 +121,8 @@ ul.horizontal li a.active {
 }
 
 .saveButton {
-  background-color: cyan; /* Green */
-  color: white;
+  background-color: red; /* Green */
+  color: black;
   text-align: center;
   text-decoration: none;
   display: inline-block;
