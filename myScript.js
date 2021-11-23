@@ -1,5 +1,5 @@
-const getOpptyRecord = 'http://salesordersystem-18112021.au-s1.cloudhub.io/getTestNine'
-const postOpptyUpdate = 'http://salesordersystem-18112021.au-s1.cloudhub.io/postTestNine'//salesordersystem-18112021.au-s1.cloudhub.io/postTestNine'
+const getOpptyRecord = 'https://salesordersystem-18112021.au-s1.cloudhub.io/getTestNine'
+const postOpptyUpdate = 'https://salesordersystem-18112021.au-s1.cloudhub.io/postTestNine'//salesordersystem-18112021.au-s1.cloudhub.io/postTestNine'
 
 let globalGet;
 
