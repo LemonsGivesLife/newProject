@@ -96,6 +96,10 @@ ul.horizontal li a.active {
 
 }
 
+.buttonSection {
+  position: fixed;
+  top: 250px;
+}
 
 
 .refreshButton {
@@ -140,4 +144,9 @@ ul.horizontal li a.active {
   top: 2px;
   left: 1px;
   box-shadow: none;
+}
+
+.syncMsg {
+  text-align: center;
+  display: none;
 }
