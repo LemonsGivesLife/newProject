@@ -152,3 +152,10 @@ const appendRecord = (singleRecord) => {
 function appendAll(payload) {
     document.getElementById("stagesSelect").value = payload.Status;
 }
+
+/*
+var slideSource = document.getElementById('salesTableBodyRow');
+
+document.getElementById('saveButton').onclick = function () {
+  slideSource.classList.toggle('fade');
+}*/
