@@ -115,24 +115,29 @@ const appendRecord = (singleRecord) => {
 
     //Create current table row
     let salesTableBodyRow = document.createElement('tr');
+    salesTableBodyRow.setAttribute("class","salesTableRow");
     salesTableBodyRow.className = 'salesTableBodyRow';
 
     //Create relevant column cells that will be appended to the current table row
 
     //Account Name
     let accountName = document.createElement('td');
+    accountName.setAttribute("class","col-2");
     accountName.innerText = singleRecord.AccountName[0];
 
     //Sales Order Number
     let salesOrderNo = document.createElement('td');
+    salesOrderNo.setAttribute("class","col-1");
     salesOrderNo.innerText = singleRecord.SalesOrderNumber[0];
 
     //Opportunity Name
     let opptyName = document.createElement('td');
+    opptyName.setAttribute("class","col-3");
     opptyName.innerText = singleRecord.OpportunityName[0];
 
     //Current Status
     let currentStage = document.createElement('td');
+    currentStage.setAttribute("class","col-4");
     //currentStage.innerHTML = '<select name="stages" id="stages></select>';
 
     let selectStage = document.createElement('select');
